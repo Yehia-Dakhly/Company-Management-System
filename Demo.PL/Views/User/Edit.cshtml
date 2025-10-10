@@ -1,0 +1,13 @@
+﻿@model UserViewModel
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit @Model.LName @Model.LName</h1>
+
+<form asp-action="Edit" method="post">
+    <partial name="PartialViews/CreateEditPartialView" model="@Model"/>
+    <input type="submit" value="Save" class="btn btn-warning" />
+    <a asp-action="Index" class="btn btn-light">Back To List</a>
+</form>

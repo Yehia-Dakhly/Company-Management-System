@@ -1,0 +1,16 @@
+﻿@if(TempData["Message"] is not null)
+{
+ <div id="alertMessage" class="alert alert-success">
+        @TempData["Message"]
+    </div>
+
+    <script>
+        // Auto-hide after 5 seconds
+        setTimeout(function () {
+            var alertBox = document.getElementById("alertMessage");
+            if (alertBox) {
+                alertBox.style.display = "none";
+            }
+        }, 5000); // 5000ms = 5 seconds
+    </script>
+}

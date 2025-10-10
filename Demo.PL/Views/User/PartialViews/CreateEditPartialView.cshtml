@@ -1,0 +1,20 @@
+﻿@model UserViewModel
+
+<input hidden name="Email" value="@Model.Email" />
+<div class="form-group">
+    <label class="col-form-label" asp-for="FName"></label>
+    <input class="form-control" asp-for="FName" />
+    <span asp-validation-for="LName" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="LName"></label>
+    <input class="form-control" asp-for="LName" />
+    <span asp-validation-for="LName" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="PhoneNumber"></label>
+    <input   class="form-control" asp-for="PhoneNumber" />
+    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+</div>

@@ -1,0 +1,21 @@
+﻿@* @model ForgetPassswordViewModel *@
+@{
+    ViewData["Title"] = "CheckYourIndox";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<<div class="row justify-content-center">
+	<div class="col-md-6 col-lg-4">
+		<div class="login-wrap p-0">
+			<div class="text-body">
+				Passowrd Reset Link Has Been Send To your Name, Check your Inbox
+			</div>
+			<a href="https://mail.google.com/mail/u/0/#inbox">Go To Your Inbox</a>
+		</div>
+	</div>
+</div>
+
+@section ValidationScriptSection {
+	<partial name="_ValidationScriptsPartial" />
+}
+
