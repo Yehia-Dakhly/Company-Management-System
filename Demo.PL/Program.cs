@@ -31,6 +31,9 @@ namespace Demo.PL
             // Add services to the container.
             #region 1. Configure Services that allow DI - DI Container
             Builder.Services.AddControllersWithViews();
+            var conn = Builder.Configuration.GetConnectionString("DefaultConnection");
+            Console.WriteLine("CONN = " + conn);
+
             Builder.Services.AddDbContext<MvcDemoDbContext>(Options =>
             {
                 Options.UseSqlServer(Builder.Configuration.GetConnectionString("DefaultConnection"));

@@ -9,7 +9,7 @@ namespace Demo.PL.ViewModels
         [Required(ErrorMessage = "Last Name is Required")]
         public string LName { get; set; }
         [Required(ErrorMessage ="Email is Required")]
-        [EmailAddress(ErrorMessage ="Invalid Email")]
+        [EmailAddress(ErrorMessage = "Invalid Email")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Password is Required")]
         [DataType(DataType.Password)]
